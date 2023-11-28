@@ -1,0 +1,25 @@
+<header id="header" class="module header fixed z-50 w-full bg-white py-10 lg:py-0" data-module="header">
+  <a href="#main-content"
+    class="skip-link text-center opacity-0 absolute mx-auto table left-0 right-0 pointer-events-none"><span>Skip to main content</span></a>
+  <div class="container navbar navbar-expand-lg lg:flex items-center justify-between">
+    <div class="header-mobile row items-center justify-between flex-wrap">
+      <div class="col col-9 col-lg-12">
+        <a id="header-logo" class="navbar-brand header-logo w-full inline-block align-middle" href="index.html">
+          <img src="assets/images/LOGO-header.svg" class="w-full"
+            alt="TailWind css starter" width="135" height="36" />
+        </a>
+      </div>
+      <div class="col col-3 text-right lg:hidden">
+        <button class="border-0 hamburger-menu" type="button" data-toggle="collapse" data-target="#main-menu"
+          aria-controls="main-menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icomoon icon-close hidden"></span>
+          <span class="sr-only">Open Menu</span>
+        </button>
+      </div>
+    </div>
+    {% include "modules/global/menu.html" %}
+  </div>
+</header>

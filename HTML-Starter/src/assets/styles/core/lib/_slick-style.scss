@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+
+.mod-banner-5{
+
+    .slicks-prev,
+    .slicks-next {
+      position: absolute;
+      display: block;
+      padding: 1px;
+      cursor: pointer;
+      background: transparent;
+      font-size: 30px;
+      transform: translate(0, -50%);
+      z-index: 11;
+      top: 110%;
+    }
+    
+    .slicks-prev {
+    @apply  md:left-90p md:top-110p
+            lg:-left-3 lg:top-110p 
+            left-78p -top-5;
+    }
+    
+    
+    .slicks-next {
+      @apply md:left-95p md:top-110p
+             lg:left-15 lg:top-110p
+             left-88p -top-5; 
+    }
+    
+    .slick-dotss {
+      position: absolute;
+      width: 100%;
+      top: 115%;
+      display: block;
+      left: -47px;
+      padding: 5px;
+      margin: 0;
+      list-style: none; 
+      text-align: center;
+      list-style: none;
+      display: flex;
+      gap: 50px;  
+     
+      @apply lg:top-115p lg:-left-5 lg:w-35p lg:justify-start lg:gap-5
+             md:left-42p md:top-115p md:w-60p md:gap-5
+             w-full left-2p top-20 gap-5;
+    
+      li {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        cursor: pointer;
+        &::before {
+          display: none;  
+        }
+    
+        button {
+          cursor: pointer;
+          border-radius: 50%;
+          text-indent: -9999px;
+          width: 100%;
+          @apply relative block;
+        
+    
+          &::after {
+            content: "";
+            width: 100%;
+            @apply absolute top-0 left-0 right-0 block rounded-full w-full  h-0p5 bg-blue-900 ;
+            transition: 0.3s;
+          }
+        }
+    
+        &:hover,
+        &.slick-active {
+          button {
+            &::after {
+                @apply bg-blue-400 h-1p5 absolute  top-0  left-0 right-0 block rounded-full w-full; 
+        } 
+       }
+      }
+     }
+    }
+    
+    .sliders,
+    .sliders-lazy {
+      &:not(.slicks-initialized) {
+        .sliders-item:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+    .sliders{
+      @apply lg:-mr-133
+    }
+  
+
+    .slider-items {
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05);
+    }
+  
+}
+

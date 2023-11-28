@@ -1,0 +1,29 @@
+.mod-banner-3 {
+    a
+    {
+        @apply   flex font-bold text-blue-400 no-underline;
+    }
+    *{
+        @apply font-sans;
+    }
+    h3{
+        @apply font-medium text-2xl leading-10 text-darkblack xl:w-100p md:w-52p ;
+    }
+
+    p{
+        @apply text-base  font-normal text-gray-300 w-75p;
+    }
+    .headline h2 {
+        @apply font-medium text-4xl leading-10 text-darkblack w-100p xl:w-130p 2xl:w-90p 2xxl:w-110p ;
+    }
+
+    .headline p {
+
+        @apply md:w-80p xl:w-109p w-80p 2xl:w-90p 2xxl:w-110p;
+    }
+    img{
+        @apply ml-5;
+    }
+ 
+
+}

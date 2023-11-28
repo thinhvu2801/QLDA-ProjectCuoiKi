@@ -1,0 +1,73 @@
+.mod-banner-9{
+
+    * {
+        @apply m-0 p-0 box-border font-plus;
+    }
+    h3 {
+        @apply font-bold text-3xl  leading-9 text-darkblack p-10 pb-20 2xl:pl-2p 2xxl:pl-1p ; 
+    }
+    .body{
+        @apply flex justify-center items-center  
+               md:min-h-0 
+               ;
+    }
+    .label{
+        @apply  text-xl font-semibold  leading-8 ;
+    }
+
+   
+    .accordion .contentBox{
+        @apply relative my-5 mx-10 ;
+    }
+
+    .accordion .contentBox .label{
+        @apply relative px-15 py-20 bg-gray-400 text-darkblack cursor-pointer
+                md:px-10 md:py-5 
+                xl:px-20 xl:py-10
+                2xl:px-20 2xl:py-15;
+        p {
+            @apply  w-70p ml-20p mt-2rem 
+                    md:w-100p md:ml-8p
+                    ;
+
+        }
+    }   
+    
+
+    .accordion .contentBox .label::before{
+    content: '+';
+    font-size:2rem;
+    transform:translateY(-50%);
+    color:#4197B4 ;
+    }
+
+    .accordion .contentBox .content{
+        @apply relative  bg-white h-0 overflow-hidden   ;
+        transition:all 0.4s;
+        p {
+            @apply w-80p ml-7p
+                    md:w-82p 
+                    xl:w-92p xl:ml-2p ;
+        }
+    }
+    .accordion .contentBox.active .content{
+        @apply h-93 p-5 py-10 mb-20 
+            md:h-50
+            xl:py-20
+            2xl:h-60 ;
+    }
+
+    .accordion .contentBox.active .label::before{
+        content: '-';
+        font-size:2rem;
+        transform:translateY(-50%);
+        color:#4197B4 ;
+         
+    }
+    .accordion .contentBox.active .label{
+        @apply relative px-15 py-20 bg-blue-400 text-white
+        md:px-10 md:py-5 
+        xl:px-20 xl:py-10
+        2xl:px-20 2xl:py-15;
+    }
+}

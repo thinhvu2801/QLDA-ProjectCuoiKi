@@ -1,0 +1,21 @@
+.mod-banner-7 {
+    * {
+        @apply font-plus ; 
+    }
+
+    h3{
+        @apply  font-bold text-2xl leading-9;
+    }
+    
+    h4{
+        @apply  font-bold text-xl leading-8 text-darkblack w-70p xl:w-114p xl:text-lg xl:pt-10p  2xl:w-90p;
+    }
+    p{
+        @apply  font-semibold text-base  leading-7 text-gray-300  ;
+    }
+    .items-text{
+        @apply ml-5p mt-7p xl:ml-0 xl:mt-0;
+    }
+
+
+}

@@ -1,0 +1,69 @@
+<header id="header" class="module header fixed z-50 w-full bg-white py-10 lg:py-0" data-module="header">
+    <!-- <a href="#main-content" class="skip-link text-center opacity-0 absolute mx-auto table left-0 right-0 pointer-events-none"><span>Skip to main content</span></a> -->
+    <div class="container navbar-title flex justify-between px-10 py-3">
+      <p>Special announcement banner at the top message here</p>
+      <div class="flex gap-5 w-60 items-center">
+        <p>See offer</p>
+        <div class="flex items-center">
+          <img src="assets/images/vecto.svg" alt="">
+        </div>
+      </div>
+    </div>  
+    <div class="container navbar navbar-expand-lg lg:flex items-center justify-between" style="border: solid 1px;">
+      <div class="header-mobile row items-center justify-between flex-wrap">
+        <div class="col col-9 col-lg-12 bg-blue-300">
+          <a id="header-logo" class="navbar-brand header-logo w-full inline-block align-middle" href="index.html">
+            <img src="assets/images/LogoHD.svg" class="w-full"
+              alt="TailWind css starter" width="135" height="36" />
+          </a>
+        </div>
+        <div class="col col-3 text-right lg:hidden">
+          <nav class="nav-2 flex items-center relative" style="border: solid 1px;">
+            <div class="icon h-full flex justify-around">
+              <div class="icon-search flex items-center gap-3">
+                <div>
+                  <img src="assets/images/LgSearch.svg" alt="">
+                </div>
+                <div class="text-8 font-medium hidden xl:block">
+                  <p>Search</p>
+                </div>
+              </div>
+              <div class="icon-stores flex items-center gap-3">
+                <div>
+                  <img src="assets/images/LgStores.svg" alt="">
+                </div>
+                <div class="text-8 font-medium hidden xl:block">
+                  <p>Stores</p>
+                </div>
+              </div>
+              <div class="icon-my-account flex items-center gap-3">
+                <div>
+                  <img src="assets/images/LgUser.svg" alt="">
+                </div>
+                <div class="text-8 font-medium">
+                  <p>My account</p>
+                </div>
+              </div>
+              <div class="icon-cart flex items-center gap-3">
+                <div>
+                  <img src="assets/images/Lg.svg" alt="">
+                </div>
+                <div class="text-8 font-medium hidden xl:block">
+                  <p>Cart(0)</p>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <button class="border-0 hamburger-menu" type="button" data-toggle="collapse" data-target="#main-menu"
+            aria-controls="main-menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icomoon icon-close hidden"></span>
+            <span class="sr-only">Open Menu</span>
+          </button>
+        </div>
+      </div>
+      {% include "modules/global/menu-nav.html" %}
+    </div>
+  </header>

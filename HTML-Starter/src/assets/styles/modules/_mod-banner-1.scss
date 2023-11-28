@@ -1,0 +1,8 @@
+.mod-banner-1{
+    p{
+        @apply font-medium text-lg leading-7 text-gray-300 2xl:w-100p xl:w-80p md:w-73p w-85p;
+    }
+    h1{
+        @apply  text-darkblack  xl:w-112p md:w-161p  w-200p mb-0 2xl:mb-8;
+    }
+}

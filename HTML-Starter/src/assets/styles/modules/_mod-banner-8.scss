@@ -1,0 +1,24 @@
+.mod-banner-8{
+    h3 {
+        @apply font-medium md:text-4xl text-2xl leading-10 mb-0 md:leading-none;
+    }
+    a{
+        @apply no-underline text-blue-400 font-bold text-sm leading-5 md:pb-2p ;
+    }
+    .box-img{
+        @media screen and (min-width: 414px){
+            transform: translateX(-100px);
+            width:178%; 
+        }
+        
+        @media screen and (min-width: 768px) {
+        width:100%; 
+        transform: translateX(12px);
+        }
+    }
+    .item-imgs{
+        @apply w-full ;
+
+    }
+
+}

@@ -1,0 +1,25 @@
+---
+author: Frontend Team
+ourTeam: My Team
+---
+{% extends 'layouts/application.html' %}
+{% block bodyClass %}class="page-home has-animation"{% endblock %}
+
+{% block content %}
+<main id="main-content" class="pt-40 main-content">
+    {% include 'modules/mod-banner-1.html' %}
+    {% include 'modules/mod-banner-2.html' %}
+    {% include 'modules/mod-banner-3.html' %}
+    {% include 'modules/mod-banner-4.html' %}
+    {% include 'modules/mod-banner-5.html' %}
+    {% include 'modules/mod-banner-6.html' %}
+    {% include 'modules/mod-banner-7.html' %}
+    <div class="space h-50 "></div>
+    {% include 'modules/mod-banner-8.html' %}
+    <div class="space h-50 "></div>
+    {% include 'modules/mod-banner-9.html' %}
+
+
+</main>
+
+{% endblock %}

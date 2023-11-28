@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+
+.mod-banner-3{
+
+    .slicks-prev,
+    .slicks-next {
+      position: absolute;
+      display: block;
+      padding: 1px;
+      cursor: pointer;
+      background: transparent;
+      font-size: 30px;
+      transform: translate(0, -50%);
+      z-index: 11;
+      top: 110%;
+    }
+    
+    .slicks-prev {
+    @apply  2xxl:left-32rem
+            2xl:left-35rem
+            md:left-88p md:top-5rem
+            xl:left-24rem  xl:top-34p  
+            left-82p -top-28;
+    }
+    
+    
+    .slicks-next {
+      @apply 2xxl:left-28rem
+             2xl:left-32rem
+             md:left-93p md:top-5rem
+             xl:left-22rem xl:top-34p
+             left-92p -top-28; 
+    }
+    
+    .slick-dotss {
+      position: absolute;
+      width: 100%;
+      top: 115%;
+      display: block;
+      left: -47px;
+      padding: 5px;
+      margin: 0;
+      list-style: none; 
+      text-align: center;
+      list-style: none;
+      display: flex;
+      gap: 50px;  
+     
+      @apply 2xxl:left-32rem
+             2xl:left-35rem
+             xl:top-37p xl:left-24rem xl:w-40p xl:justify-start xl:gap-5
+             md:left-53p md:top-3rem md:w-45p md:gap-5
+             w-full left-2p top-2rem gap-5;
+    
+      li {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        cursor: pointer;
+        &::before {
+          display: none;  
+        }
+    
+        button {
+          cursor: pointer;
+          border-radius: 50%;
+          text-indent: -9999px;
+          width: 100%;
+          @apply relative block;
+        
+    
+          &::after {
+            content: "";
+            width: 100%;
+            @apply absolute top-0 left-0 right-0 block rounded-full w-full  h-0p5 bg-blue-900 ;
+            transition: 0.3s;
+          }
+        }
+    
+        &:hover,
+        &.slick-active {
+          button {
+            &::after {
+                @apply bg-blue-400 h-1p5 absolute  top-0  left-0 right-0 block rounded-full w-full; 
+        } 
+       }
+      }
+     }
+    }
+    
+    
+    .sliderss,
+    .sliderss-lazy {
+      &:not(.slicks-initialized) {
+        .sliderss-item:not(:first-child) {
+          display: none;
+        }
+      } 
+    }
+  
+}
+

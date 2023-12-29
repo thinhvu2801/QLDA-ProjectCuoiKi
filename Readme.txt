@@ -21,20 +21,12 @@ npm install --global gulp-cli
 ```
 
 ## Install
-```sh
-git clone https://git.9wdev.com/9thWonder/c8starter.git <projectname>
-cd <projectname>
-branch html
 npm install
 
 ## Configuring the git and githook
 
 ###### Changing the origin
 
-```sh
-git remote set-url origin https://git.9wdev.com/9thWonder/<NEW_GIT_REPO>.git
-git checkout -b html
-```
 
 ###### Installing the githook \(comming soon\)
 
@@ -104,7 +96,6 @@ gulp css
 'npm run demo' after run cmd 'npm run build' or run cmd 'gulp production'
 ```
 
-## Pushing to the git.9wdev.com
 
 ##### \#
 
@@ -132,8 +123,3 @@ npm run critical-inline
 #config visual studio code
 - use editorconfig, stylelint, standard js format code.
 - install extensions: Beautify, StandardJS, stylelint.
-
-#Run sonal in source: cmd 'SonarScanner/bin/sonar-scanner'
-# Checklist Frontend and Guide
- => https://9thwonder-my.sharepoint.com/:x:/p/duc_huynh/EQY5-LjCJGdLob_EBUYYyuQBp2A-MdMpYn13ov9xE1_FaA?e=Pe9AKL
- 
